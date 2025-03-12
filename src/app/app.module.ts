@@ -14,6 +14,7 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { FirebaseModule } from './firebase/firebase.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FirebaseModule
   ],
   providers: [
     provideClientHydration(withEventReplay())
